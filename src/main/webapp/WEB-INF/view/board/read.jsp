@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${boardVO.title}내용</title>
+<title>${boardVO.title}&nbsp내용</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
+	<header>밴드</header>
 	<table border="1">
 		<tr>
 			<th>제목</th>

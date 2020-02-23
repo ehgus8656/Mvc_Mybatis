@@ -10,6 +10,7 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias alias="boardVO" type="board.domain.BoardVO"/>
+		<typeAlias alias="boardVO" type="spring.BoardVO"/>
+		<typeAlias alias="member" type="spring.Member"/>
 	</typeAliases>
 </configuration>

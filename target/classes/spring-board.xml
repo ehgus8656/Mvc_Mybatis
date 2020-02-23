@@ -22,7 +22,7 @@
 		<property name="idleConnectionTestPeriod" value="300" />
 	</bean>
 	
-	<bean id="boardDao" class="board.dao.BoardDaoMybatis">
+	<bean id="boardDao" class="spring.BoardDaoMybatis">
 		<constructor-arg ref="sqlSessionTemplate" />
 	</bean>
 	
@@ -30,11 +30,11 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
-	<bean id="boardService" class="board.service.BoardServiceImpl">
+	<bean id="boardService" class="spring.BoardServiceImpl">
 		<property name="boardDao" ref="boardDao" />
 	</bean>
 	
-	<bean id="boardServiceImpl" class="board.service.BoardServiceImpl">
+	<bean id="boardServiceImpl" class="spring.BoardServiceImpl">
 		<property name="boardDao" ref="boardDao" />
 	</bean>
 	
@@ -44,6 +44,7 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:config/sqlmap-board.xml</value>
+				<value>classpath:config/sqlmap-member.xml</value>
 			</list>
 		</property>
 	</bean>
